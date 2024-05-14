@@ -8,7 +8,7 @@ Para o servidor rodar é necessario mante-lo conectado a um banco de dados Postg
   * Criar e modificar o arquivo .env. Um arquivo exemplo disponível no repositório deve ser utilizado como base para criação do .env. Nele deve conter as informações relativos ao banco de dados, tal qual seu HOST, porta onde ele está rodando, nome do banco de dados( e potencialmente, nome das tabelas e colunas a serem utilizadas, talvez isso seja demais e eu tire, na veradade é quase certeza que é demais).
 
 As operações no banco de dados devem decorrer na seguinte ordem:
-```
+```java
   Statement st = bd.createStatement(); // bd é a conexão com o banco de dados
   ResultSet rs = st.executeQuery("SQL goes here");
 
@@ -19,4 +19,4 @@ As operações no banco de dados devem decorrer na seguinte ordem:
   // Fim do código exemplo
   rs.close();
   st.close();
-```java
+```
