@@ -19,4 +19,4 @@ As operações no banco de dados devem decorrer na seguinte ordem:
   // Fim do código exemplo
   rs.close();
   st.close();
-```
+```java
